@@ -14,9 +14,9 @@ function loadCountries() {
             dataList.forEach((element, index) => {
 
                 body += `
-                               <div class="col" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+                    
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000">
                         <div class="card shadow-sm">
                             <img src="${element.flags.png}" alt="">
                             <div class="card-body">
