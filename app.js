@@ -5,10 +5,9 @@ let countriesArrayList = [];
 function loadCountries() {
     let countriesList = document.getElementById("countriesList");
     let body = "";
-
-    fetch("/countries.json")
-        .then(res => res.json())
-        .then(dataList => {
+            fetch(`https://restcountries.com/v3.1/all`)
+            .then(res => res.json())
+            .then(dataList => {
             countriesArrayList = dataList;
             loadModalData();
             dataList.forEach((element, index) => {
